@@ -2,9 +2,8 @@
 using System.Drawing;
 
 namespace ControlDatos {
-    public partial class DatosNormal : UserControl {
-
-        public DatosNormal() {
+    public partial class DatosListaImagen : UserControl {
+        public DatosListaImagen() {
             InitializeComponent();
         }
 
@@ -12,6 +11,5 @@ namespace ControlDatos {
             pbImage.Image = Image.FromFile(image);
             lblTitle.Text = title;
         }
-
     }
 }

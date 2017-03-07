@@ -1,16 +1,16 @@
 ﻿namespace ControlDatos
 {
-    partial class DatosNormal
+    partial class DatosListaImagen
     {
         /// <summary> 
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary> 
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,21 +20,21 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de componentes
+        #region Component Designer generated code
 
         /// <summary> 
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.panelImage = new System.Windows.Forms.Panel();
             this.pbImage = new System.Windows.Forms.PictureBox();
-            this.panelTitle = new System.Windows.Forms.Panel();
+            this.panelLabel = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
-            this.panelTitle.SuspendLayout();
+            this.panelLabel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelImage
@@ -42,50 +42,47 @@
             this.panelImage.Controls.Add(this.pbImage);
             this.panelImage.Location = new System.Drawing.Point(3, 3);
             this.panelImage.Name = "panelImage";
-            this.panelImage.Size = new System.Drawing.Size(174, 158);
+            this.panelImage.Size = new System.Drawing.Size(101, 144);
             this.panelImage.TabIndex = 0;
             // 
             // pbImage
             // 
-            this.pbImage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbImage.Location = new System.Drawing.Point(32, 0);
+            this.pbImage.Location = new System.Drawing.Point(3, 3);
             this.pbImage.Name = "pbImage";
-            this.pbImage.Size = new System.Drawing.Size(110, 158);
+            this.pbImage.Size = new System.Drawing.Size(95, 138);
             this.pbImage.TabIndex = 0;
             this.pbImage.TabStop = false;
             // 
-            // panelTitle
+            // panelLabel
             // 
-            this.panelTitle.Controls.Add(this.lblTitle);
-            this.panelTitle.Location = new System.Drawing.Point(3, 167);
-            this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(174, 48);
-            this.panelTitle.TabIndex = 1;
+            this.panelLabel.Controls.Add(this.lblTitle);
+            this.panelLabel.Location = new System.Drawing.Point(107, 3);
+            this.panelLabel.Name = "panelLabel";
+            this.panelLabel.Size = new System.Drawing.Size(275, 144);
+            this.panelLabel.TabIndex = 1;
             // 
             // lblTitle
             // 
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(174, 48);
+            this.lblTitle.Size = new System.Drawing.Size(275, 144);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Harry Potter y las Reliquias de la Muerte Parte Dos";
+            this.lblTitle.Text = "label1";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // DatosNormal
+            // DatosListaImagen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panelTitle);
+            this.Controls.Add(this.panelLabel);
             this.Controls.Add(this.panelImage);
-            this.Name = "DatosNormal";
-            this.Size = new System.Drawing.Size(177, 218);
+            this.Name = "DatosListaImagen";
+            this.Size = new System.Drawing.Size(385, 150);
             this.panelImage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
-            this.panelTitle.ResumeLayout(false);
+            this.panelLabel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -94,7 +91,7 @@
 
         private System.Windows.Forms.Panel panelImage;
         private System.Windows.Forms.PictureBox pbImage;
-        private System.Windows.Forms.Panel panelTitle;
+        private System.Windows.Forms.Panel panelLabel;
         private System.Windows.Forms.Label lblTitle;
     }
 }
