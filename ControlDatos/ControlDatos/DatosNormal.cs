@@ -8,8 +8,10 @@ namespace ControlDatos {
             InitializeComponent();
         }
 
-        public void loadDatas(string image, string title) {
-            pbImage.Image = Image.FromFile(image);
+        public void loadDatas(string imageFile, string title) {
+            Image image = Image.FromFile(imageFile);
+            pbImage.SizeMode = PictureBoxSizeMode.CenterImage;
+            pbImage.Image = image;
             lblTitle.Text = title;
         }
 
