@@ -9,8 +9,8 @@ namespace ControlDatos {
         }
 
         public void loadDatas(string imageFile, string title) {
-            Image image = Image.FromFile(imageFile);
-            pbImage.SizeMode = PictureBoxSizeMode.CenterImage;
+            Image image = Bitmap.FromFile(imageFile);
+            pbImage.SizeMode = PictureBoxSizeMode.StretchImage;
             pbImage.Image = image;
             lblTitle.Text = title;
         }
