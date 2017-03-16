@@ -4,15 +4,37 @@ using System.Drawing;
 namespace ControlDatos {
     public partial class DatosNormal : UserControl {
 
-        public DatosNormal() {
+        private string imageFile, title;
+
+        public DatosNormal()
+        {
             InitializeComponent();
         }
 
-        public void loadDatas(string imageFile, string title) {
+        public void loadDatas()
+        {
             Image image = Bitmap.FromFile(imageFile);
-            pbImage.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbImage.SizeMode = PictureBoxSizeMode.CenterImage;
             pbImage.Image = image;
             lblTitle.Text = title;
+        }
+
+        public void setDatas(string imageFileSend, string titleSend)
+        {
+            title = titleSend;
+            imageFile = imageFileSend;
+
+            loadDatas();
+        }
+
+        public string getTitle()
+        {
+            return title;
+        }
+
+        public string getImageFile()
+        {
+            return imageFile;
         }
 
     }

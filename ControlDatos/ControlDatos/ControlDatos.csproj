@@ -43,12 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="DatosLista.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DatosLista.Designer.cs">
-      <DependentUpon>DatosLista.cs</DependentUpon>
-    </Compile>
     <Compile Include="DatosListaImagen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -64,9 +58,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="DatosLista.resx">
-      <DependentUpon>DatosLista.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DatosListaImagen.resx">
       <DependentUpon>DatosListaImagen.cs</DependentUpon>
     </EmbeddedResource>
