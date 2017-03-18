@@ -43,12 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="DatosLista.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DatosLista.Designer.cs">
-      <DependentUpon>DatosLista.cs</DependentUpon>
-    </Compile>
     <Compile Include="DatosListaImagen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -62,17 +56,26 @@
       <DependentUpon>DatosNormal.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="DatosLista.resx">
-      <DependentUpon>DatosLista.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DatosListaImagen.resx">
       <DependentUpon>DatosListaImagen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DatosNormal.resx">
       <DependentUpon>DatosNormal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SinImagen.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

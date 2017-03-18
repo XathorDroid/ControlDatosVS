@@ -4,15 +4,64 @@ using System.Drawing;
 namespace ControlDatos {
     public partial class DatosNormal : UserControl {
 
-        public DatosNormal() {
+        private string imageFile, title;
+        private Image image;
+
+        public DatosNormal()
+        {
             InitializeComponent();
         }
 
-        public void loadDatas(string imageFile, string title) {
-            Image image = Image.FromFile(imageFile);
+        public void loadDatas()
+        {
             pbImage.SizeMode = PictureBoxSizeMode.CenterImage;
             pbImage.Image = image;
             lblTitle.Text = title;
+        }
+
+        public void setDatas(string imageFileSend, string titleSend)
+        {
+            title = titleSend;
+            imageFile = imageFileSend;
+            if (imageFileSend != null)
+            {
+                image = Bitmap.FromFile(imageFileSend);
+            }
+            else
+            {
+                image = Properties.Resources.SinImagen;
+            }
+
+            loadDatas();
+        }
+
+        public void setClick(System.EventArgs e) {
+
+        }
+
+        public string getTitle()
+        {
+            return title;
+        }
+
+        public string getImageFile()
+        {
+            return imageFile;
+        }
+
+        public PictureBox getPb()
+        {
+            return pbImage;
+        }
+
+        public Label getLbl()
+        {
+            return lblTitle;
+        }
+
+        public Panel getPanelPb()
+        {
+            return panelImage;
         }
 
     }

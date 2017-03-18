@@ -32,9 +32,11 @@
             this.pbImage = new System.Windows.Forms.PictureBox();
             this.panelLabel = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.panelFondoImagen = new System.Windows.Forms.Panel();
             this.panelImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.panelLabel.SuspendLayout();
+            this.panelFondoImagen.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelImage
@@ -72,17 +74,28 @@
             this.lblTitle.Text = "label1";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panelFondoImagen
+            // 
+            this.panelFondoImagen.Controls.Add(this.panelImage);
+            this.panelFondoImagen.Controls.Add(this.panelLabel);
+            this.panelFondoImagen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelFondoImagen.Location = new System.Drawing.Point(0, 0);
+            this.panelFondoImagen.Name = "panelFondoImagen";
+            this.panelFondoImagen.Size = new System.Drawing.Size(383, 148);
+            this.panelFondoImagen.TabIndex = 1;
+            // 
             // DatosListaImagen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panelLabel);
-            this.Controls.Add(this.panelImage);
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.panelFondoImagen);
             this.Name = "DatosListaImagen";
-            this.Size = new System.Drawing.Size(385, 150);
+            this.Size = new System.Drawing.Size(383, 148);
             this.panelImage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.panelLabel.ResumeLayout(false);
+            this.panelFondoImagen.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -93,5 +106,6 @@
         private System.Windows.Forms.PictureBox pbImage;
         private System.Windows.Forms.Panel panelLabel;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Panel panelFondoImagen;
     }
 }

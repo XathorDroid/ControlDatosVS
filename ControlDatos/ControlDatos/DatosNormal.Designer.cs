@@ -40,7 +40,7 @@
             // panelImage
             // 
             this.panelImage.Controls.Add(this.pbImage);
-            this.panelImage.Location = new System.Drawing.Point(3, 3);
+            this.panelImage.Location = new System.Drawing.Point(0, 0);
             this.panelImage.Name = "panelImage";
             this.panelImage.Size = new System.Drawing.Size(174, 158);
             this.panelImage.TabIndex = 0;
@@ -59,9 +59,9 @@
             // panelTitle
             // 
             this.panelTitle.Controls.Add(this.lblTitle);
-            this.panelTitle.Location = new System.Drawing.Point(3, 167);
+            this.panelTitle.Location = new System.Drawing.Point(0, 159);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(174, 48);
+            this.panelTitle.Size = new System.Drawing.Size(174, 58);
             this.panelTitle.TabIndex = 1;
             // 
             // lblTitle
@@ -70,19 +70,23 @@
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(174, 48);
+            this.lblTitle.Size = new System.Drawing.Size(174, 58);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Harry Potter y las Reliquias de la Muerte Parte Dos";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DatosNormal
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelImage);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DoubleBuffered = true;
             this.Name = "DatosNormal";
-            this.Size = new System.Drawing.Size(177, 218);
+            this.Size = new System.Drawing.Size(175, 216);
             this.panelImage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.panelTitle.ResumeLayout(false);
