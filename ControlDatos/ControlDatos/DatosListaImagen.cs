@@ -43,5 +43,20 @@ namespace ControlDatos {
         {
             return imageFile;
         }
+
+        public PictureBox getPb()
+        {
+            return pbImage;
+        }
+
+        public Label getLbl()
+        {
+            return lblTitle;
+        }
+
+        public Panel getPanelPb()
+        {
+            return panelImage;
+        }
     }
 }
