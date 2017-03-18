@@ -5,6 +5,7 @@ namespace ControlDatos {
     public partial class DatosNormal : UserControl {
 
         private string imageFile, title;
+        private Image image;
 
         public DatosNormal()
         {
@@ -13,7 +14,6 @@ namespace ControlDatos {
 
         public void loadDatas()
         {
-            Image image = Bitmap.FromFile(imageFile);
             pbImage.SizeMode = PictureBoxSizeMode.CenterImage;
             pbImage.Image = image;
             lblTitle.Text = title;
@@ -23,6 +23,11 @@ namespace ControlDatos {
         {
             title = titleSend;
             imageFile = imageFileSend;
+            if(imageFileSend != null) {
+                image = Bitmap.FromFile(imageFileSend);
+            } else {
+                image = Properties.Resources.SinImagen;
+            }
 
             loadDatas();
         }

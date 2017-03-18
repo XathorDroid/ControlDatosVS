@@ -39,10 +39,11 @@
             // 
             // panelImage
             // 
+            this.panelImage.AllowDrop = true;
             this.panelImage.Controls.Add(this.pbImage);
-            this.panelImage.Location = new System.Drawing.Point(3, 3);
+            this.panelImage.Location = new System.Drawing.Point(-1, -1);
             this.panelImage.Name = "panelImage";
-            this.panelImage.Size = new System.Drawing.Size(174, 158);
+            this.panelImage.Size = new System.Drawing.Size(178, 162);
             this.panelImage.TabIndex = 0;
             // 
             // pbImage
@@ -52,7 +53,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbImage.Location = new System.Drawing.Point(32, 0);
             this.pbImage.Name = "pbImage";
-            this.pbImage.Size = new System.Drawing.Size(110, 158);
+            this.pbImage.Size = new System.Drawing.Size(114, 162);
             this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImage.TabIndex = 0;
             this.pbImage.TabStop = false;
@@ -80,10 +81,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelImage);
             this.Name = "DatosNormal";
-            this.Size = new System.Drawing.Size(177, 218);
+            this.Size = new System.Drawing.Size(175, 216);
             this.panelImage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.panelTitle.ResumeLayout(false);

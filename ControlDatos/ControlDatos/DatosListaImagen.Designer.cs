@@ -74,12 +74,14 @@
             // 
             // DatosListaImagen
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.panelLabel);
             this.Controls.Add(this.panelImage);
             this.Name = "DatosListaImagen";
-            this.Size = new System.Drawing.Size(385, 150);
+            this.Size = new System.Drawing.Size(383, 148);
             this.panelImage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.panelLabel.ResumeLayout(false);
