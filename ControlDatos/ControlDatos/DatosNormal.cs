@@ -19,13 +19,29 @@ namespace ControlDatos {
             lblTitle.Text = title;
         }
 
-        public void setDatas(string imageFileSend, string titleSend)
+        //public void setDatas(string imageFileSend, string titleSend)
+        //{
+        //    title = titleSend;
+        //    imageFile = imageFileSend;
+        //    if (imageFileSend != null)
+        //    {
+        //        image = Bitmap.FromFile(imageFileSend);
+        //    }
+        //    else
+        //    {
+        //        image = Properties.Resources.SinImagen;
+        //    }
+
+        //    loadDatas();
+        //}
+
+        public void setDatas(Image imageSend, string titleSend)
         {
             title = titleSend;
-            imageFile = imageFileSend;
-            if (imageFileSend != null)
+            //imageFile = imageFileSend;
+            if (imageSend != null)
             {
-                image = Bitmap.FromFile(imageFileSend);
+                image = imageSend;
             }
             else
             {
@@ -47,6 +63,11 @@ namespace ControlDatos {
         public string getImageFile()
         {
             return imageFile;
+        }
+
+        public Image getImage()
+        {
+            return image;
         }
 
         public PictureBox getPb()
