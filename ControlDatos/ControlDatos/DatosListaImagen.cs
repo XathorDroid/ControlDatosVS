@@ -18,26 +18,10 @@ namespace ControlDatos {
             lblTitle.Text = title;
         }
 
-        //public void setDatas(string imageFileSend, string titleSend)
-        //{
-        //    title = titleSend;
-        //    imageFile = imageFileSend;
-        //    if (imageFileSend != null)
-        //    {
-        //        image = Bitmap.FromFile(imageFileSend);
-        //    }
-        //    else
-        //    {
-        //        image = Properties.Resources.SinImagen;
-        //    }
-
-        //    loadDatas();
-        //}
-
-        public void setDatas(Image imageSend, string titleSend)
+        public void setDatas(Image imageSend, string titleSend, string imageFileSend)
         {
             title = titleSend;
-            //imageFile = imageFileSend;
+            imageFile = imageFileSend;
             if (imageSend != null)
             {
                 image = imageSend;
